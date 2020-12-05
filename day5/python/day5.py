@@ -11,11 +11,11 @@ def find_nr(row_code, total_len):
     
     return candidates[0]
 
-
 with open('day5/input_day5.txt') as file:
     lines = file.read().splitlines()
-    max_id = 0
-    candidate = list(range(928+1))
+
+max_id = 0
+candidate = list(range(928+1))
 for code in lines:
     # input BFBBBFFLRL
     row_code = code[:-3] # BFBBBFF
@@ -29,5 +29,3 @@ for code in lines:
 print(max_id)
 missing_id = list(filter((0).__ne__, candidate))
 print(missing_id)
-
-# print(lines)
