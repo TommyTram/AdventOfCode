@@ -2,11 +2,6 @@
 from os.path import dirname, realpath, join
 import time, pytest, re
 
-def find_key(line):
-  key_len = 3
-  space = line.find(' ')
-  
-
 def transform_input(input_):
   # custom transform for the day
   new_input = list()
